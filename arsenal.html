@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ece7dc">
+  <meta name="description" content="Каталог зброї Counter-Strike 2: ціна, сторона покупки, шкода і розмір магазину.">
+  <title>Арсенал CS2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,650;1,6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="arsenalstyle.css">
+</head>
+<body id="top">
+  <header class="topbar">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">CS</span>
+      <span class="brand__name">Арсенал</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Розділи сторінки">
+      <a href="#arsenal">Зброя</a>
+      <a href="#about">Про арсенал</a>
+    </nav>
+    <a class="button" href="#arsenal">До каталогу</a>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <p class="eyebrow">Counter-Strike 2</p>
+      <h1>Знай свій <em>арсенал</em></h1>
+      <p class="lede">Вісім зразків, з яких збирають економіку раунду. У кожного — ціна з меню покупки, сторона і те, чим він відрізняється в дуелі.</p>
+      <a class="button button--solid" href="#arsenal">Дивитися зброю</a>
+    </section>
+
+    <section class="catalog" id="arsenal" aria-labelledby="catalog-title">
+      <div class="catalog__head">
+        <h2 id="catalog-title">Каталог</h2>
+        <p data-count-label>08 у списку</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Фільтр за типом">
+        <button type="button" data-filter="all" aria-pressed="true">Усі</button>
+        <button type="button" data-filter="rifle" aria-pressed="false">Гвинтівки</button>
+        <button type="button" data-filter="sniper" aria-pressed="false">Снайперські</button>
+        <button type="button" data-filter="pistol" aria-pressed="false">Пістолети</button>
+        <button type="button" data-filter="smg" aria-pressed="false">Пістолети-кулемети</button>
+      </div>
+
+      <div class="weapons">
+        <article class="weapon" data-cat="rifle">
+          <div class="weapon__stage">
+            <svg viewBox="0 0 400 120" aria-hidden="true">
+              <path fill="#1c1d19" d="M16 80 24 62 74 50l24 10h52v-14h96V36h10v10h80v-8h14v24h-14v-8h-86v14h-46l-8 26h-24l10-26h-20l-14 24h-28l16-24H92l-14 16-48 8z"/>
+            </svg>
+          </div>
+          <div class="weapon__body">
+            <p class="weapon__index">01</p>
+            <div class="weapon__title">
+              <h3>AK-47</h3>
+              <p class="price">$2 700</p>
+            </div>
+            <p class="weapon__kind"><span class="side side--t">T</span> Гвинтівка</p>
+            <p>Постріл у голову пробиває шолом. Основна покупка терористів.</p>
+            <dl class="stats">
+              <div><dt>Шкода</dt><dd>36</dd></div>
+              <div><dt>Магазин</dt><dd>30</dd></div>
+              <div><dt>Темп</dt><dd>600</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="weapon" data-cat="rifle">
+          <div class="weapon__stage">
+            <svg viewBox="0 0 400 120" aria-hidden="true">
+              <path fill="#1c1d19" d="M14 70v28h24v-16h36l8 22h24l-12-22h36l8 30h22l-8-30h62l8 16h92V62h-92l-6-8H250l-8-16H140l-10 16H70V70z"/>
+            </svg>
+          </div>
+          <div class="weapon__body">
+            <p class="weapon__index">02</p>
+            <div class="weapon__title">
+              <h3>M4A1-S</h3>
+              <p class="price">$2 900</p>
+            </div>
+            <p class="weapon__kind"><span class="side side--ct">CT</span> Гвинтівка</p>
+            <p>Глушник і коротший магазин. Чергу легше втримати на цілі.</p>
+            <dl class="stats">
+              <div><dt>Шкода</dt><dd>38</dd></div>
+              <div><dt>Магазин</dt><dd>20</dd></div>
+              <div><dt>Темп</dt><dd>600</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="weapon" data-cat="sniper">
+          <div class="weapon__stage">
+            <svg viewBox="0 0 400 120" aria-hidden="true">
+              <path fill="#1c1d19" d="M12 78 22 60 82 50l20 14h28V40h100l18 12v10h140v8H250v16h-64l-8 22h-20l8-22h-24l-14 20h-24l14-20H96l-12 18-52 6z"/>
+            </svg>
+          </div>
+          <div class="weapon__body">
+            <p class="weapon__index">03</p>
+            <div class="weapon__title">
+              <h3>AWP</h3>
+              <p class="price">$4 750</p>
+            </div>
+            <p class="weapon__kind"><span class="side side--both">T / CT</span> Снайперська</p>
+            <p>Один постріл у корпус закриває дуель. Найдорожча покупка в списку.</p>
+            <dl class="stats">
+              <div><dt>Шкода</dt><dd>115</dd></div>
+              <div><dt>Магазин</dt><dd>5</dd></div>
+              <div><dt>Темп</dt><dd>41</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="weapon" data-cat="pistol">
+          <div class="weapon__stage">
+            <svg viewBox="0 0 400 120" aria-hidden="true">
+              <path fill="#1c1d19" d="M124 48h116l28 14h32v12h-32l-22 8v28h-36l-8-28h-22l-16 36h-30l18-36h-16z"/>
+            </svg>
+          </div>
+          <div class="weapon__body">
+            <p class="weapon__index">04</p>
+            <div class="weapon__title">
+              <h3>Desert Eagle</h3>
+              <p class="price">$700</p>
+            </div>
+            <p class="weapon__kind"><span class="side side--both">T / CT</span> Пістолет</p>
+            <p>Важкий пістолет. Влучний постріл у голову карає навіть броньовану ціль.</p>
+            <dl class="stats">
+              <div><dt>Шкода</dt><dd>53</dd></div>
+              <div><dt>Магазин</dt><dd>7</dd></div>
+              <div><dt>Темп</dt><dd>267</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="weapon" data-cat="rifle">
+          <div class="weapon__stage">
+            <svg viewBox="0 0 400 120" aria-hidden="true">
+              <path fill="#1c1d19" d="M16 74 28 58 78 52l16 12h24V36h62V24h14v12h8v16h48v12h70v-8h16v18h-16v-4H214v28h-22l-8-28h-28l-16 30h-28l18-30H96l-14 20-48 6z"/>
+            </svg>
+          </div>
+          <div class="weapon__body">
+            <p class="weapon__index">05</p>
+            <div class="weapon__title">
+              <h3>M4A4</h3>
+              <p class="price">$2 900</p>
+            </div>
+            <p class="weapon__kind"><span class="side side--ct">CT</span> Гвинтівка</p>
+            <p>Та сама роль, що в M4A1-S, але магазин на 30 набоїв і без глушника.</p>
+            <dl class="stats">
+              <div><dt>Шкода</dt><dd>33</dd></div>
+              <div><dt>Магазин</dt><dd>30</dd></div>
+              <div><dt>Темп</dt><dd>667</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="weapon" data-cat="sniper">
+          <div class="weapon__stage">
+            <svg viewBox="0 0 400 120" aria-hidden="true">
+              <path fill="#1c1d19" d="M28 78 40 62 100 54l18 14h30V46h78l16 12v8h128v8H246v14h-62l-8 20h-20l8-20h-22l-14 18h-24l14-18H108l-12 16-48 6z"/>
+            </svg>
+          </div>
+          <div class="weapon__body">
+            <p class="weapon__index">06</p>
+            <div class="weapon__title">
+              <h3>SSG 08</h3>
+              <p class="price">$1 700</p>
+            </div>
+            <p class="weapon__kind"><span class="side side--both">T / CT</span> Снайперська</p>
+            <p>Легка снайперська гвинтівка. Точний постріл лишається точним навіть у стрибку.</p>
+            <dl class="stats">
+              <div><dt>Шкода</dt><dd>88</dd></div>
+              <div><dt>Магазин</dt><dd>10</dd></div>
+              <div><dt>Темп</dt><dd>48</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="weapon" data-cat="smg">
+          <div class="weapon__stage">
+            <svg viewBox="0 0 400 120" aria-hidden="true">
+              <path fill="#1c1d19" d="M36 68h42l10-16h86l10 16h62v12h-48v24h-16V80h-28v40h-20l-8-40h-24l-14 24h-26l16-24H48v-12z"/>
+            </svg>
+          </div>
+          <div class="weapon__body">
+            <p class="weapon__index">07</p>
+            <div class="weapon__title">
+              <h3>MP9</h3>
+              <p class="price">$1 250</p>
+            </div>
+            <p class="weapon__kind"><span class="side side--ct">CT</span> Пістолет-кулемет</p>
+            <p>Короткий і дуже швидкий. Для раунду, коли на гвинтівку ще не вистачає.</p>
+            <dl class="stats">
+              <div><dt>Шкода</dt><dd>26</dd></div>
+              <div><dt>Магазин</dt><dd>30</dd></div>
+              <div><dt>Темп</dt><dd>857</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="weapon" data-cat="pistol">
+          <div class="weapon__stage">
+            <svg viewBox="0 0 400 120" aria-hidden="true">
+              <path fill="#1c1d19" d="M132 56h112v6h74v16h-74v8h-28l-14 32h-30l18-32h-22l-16 8v-14z"/>
+            </svg>
+          </div>
+          <div class="weapon__body">
+            <p class="weapon__index">08</p>
+            <div class="weapon__title">
+              <h3>USP-S</h3>
+              <p class="price">$200</p>
+            </div>
+            <p class="weapon__kind"><span class="side side--ct">CT</span> Пістолет</p>
+            <p>Стартовий пістолет спецпризначенців. Глушник ховає перший постріл на пістолетному раунді.</p>
+            <dl class="stats">
+              <div><dt>Шкода</dt><dd>35</dd></div>
+              <div><dt>Магазин</dt><dd>12</dd></div>
+              <div><dt>Темп</dt><dd>353</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Арсенал CS2</p>
+    <p>Ціни й числа — з меню покупки та ігрових характеристик.</p>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll("[data-filter]");
+    const cards = document.querySelectorAll(".weapon");
+    const label = document.querySelector("[data-count-label]");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+        buttons.forEach((item) => {
+          item.setAttribute("aria-pressed", String(item === button));
+        });
+        let shown = 0;
+        cards.forEach((card) => {
+          const match = filter === "all" || card.dataset.cat === filter;
+          card.hidden = !match;
+          if (match) shown += 1;
+        });
+        label.textContent = String(shown).padStart(2, "0") + " у списку";
+      });
+    });
+  </script>
+</body>
+</html>
